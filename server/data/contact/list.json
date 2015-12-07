@@ -1,0 +1,14 @@
+[
+  {
+    "id" : 1,
+    "by" : "Ugly User",
+    "at" : 1448875479000,
+    "msg": "lorem ipsum.."
+  },
+  {
+    "id" : 101,
+    "by" : "Pretty User",
+    "at" : 1441875479000,
+    "msg": "lorem ipsum!!!! "
+  }
+]
