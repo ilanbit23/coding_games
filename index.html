@@ -12,6 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/jquery-rating.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
@@ -154,7 +155,21 @@
                             <h4>Thumbnail Headline</h4>
                             <p>short thumbnail description</p>
                             <p><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
-                                <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+                                <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                            </p>
+                            <div class="rating">
+                                <div class="group1">
+                                    <div class="jr-rateNode jr-normal"></div>
+                                    <div class="jr-rateNode jr-normal"></div>
+                                    <div class="jr-rateNode jr-normal"></div>
+                                    <div class="jr-rateNode jr-normal"></div>
+                                    <div class="jr-rateNode jr-normal"></div>
+                                </div>
+                                <div >
+                                    <span class="youRate">Your Rate:</span><span id="info1" >0</span>
+                                </div>
+                                <input class="btnRate" type="button" value="Rate">
+                            </div>
                         </div>
                         <img class="img-responsive img-height" src="img/cars.gif" alt="...">
                     </div>
@@ -167,7 +182,21 @@
                                 <h4>Thumbnail Headline</h4>
                                 <p>short thumbnail description</p>
                                 <p><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
-                                    <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+                                    <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                                </p>
+                                <div class="rating">
+                                    <div class="group2">
+                                        <div class="jr-rateNode jr-normal"></div>
+                                        <div class="jr-rateNode jr-normal"></div>
+                                        <div class="jr-rateNode jr-normal"></div>
+                                        <div class="jr-rateNode jr-normal"></div>
+                                        <div class="jr-rateNode jr-normal"></div>
+                                    </div>
+                                    <div >
+                                        <span class="youRate">Your Rate:</span><span id="info2" >0</span>
+                                    </div>
+                                    <input class="btnRate" type="button" value="Rate">
+                                </div>
                             </div>
                             <img class="img-responsive img-height" src="img/simon.gif" alt="...">
                         </div>
@@ -181,13 +210,25 @@
                             <h4>Thumbnail Headline</h4>
                             <p>short thumbnail description</p>
                             <p><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
-                                <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+                                <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                            </p>
+                            <div class="rating">
+                                <div class="group3">
+                                    <div class="jr-rateNode jr-normal"></div>
+                                    <div class="jr-rateNode jr-normal"></div>
+                                    <div class="jr-rateNode jr-normal"></div>
+                                    <div class="jr-rateNode jr-normal"></div>
+                                    <div class="jr-rateNode jr-normal"></div>
+                                </div>
+                                <div >
+                                    <span class="youRate">Your Rate:</span><span id="info3" >0</span>
+                                </div>
+                                <input class="btnRate" type="button" value="Rate">
+                            </div>
                         </div>
                         <img class="img-responsive img-height" src="img/chess.gif" alt="...">
                     </div>
                 </div>
-
-
                 <div class="row">
                     <div class="col-md-6">
                         <div class="thumbnail">
@@ -195,7 +236,21 @@
                                 <h4>Thumbnail Headline</h4>
                                 <p>short thumbnail description</p>
                                 <p><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
-                                    <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+                                    <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                                </p>
+                                <div class="rating">
+                                    <div class="group4">
+                                        <div class="jr-rateNode jr-normal"></div>
+                                        <div class="jr-rateNode jr-normal"></div>
+                                        <div class="jr-rateNode jr-normal"></div>
+                                        <div class="jr-rateNode jr-normal"></div>
+                                        <div class="jr-rateNode jr-normal"></div>
+                                    </div>
+                                    <div >
+                                        <span class="youRate">Your Rate:</span><span id="info4" >0</span>
+                                    </div>
+                                    <input class="btnRate" type="button" value="Rate">
+                                </div>
                             </div>
                             <img class="img-responsive img-height" src="img/balloon.gif" alt="...">
                         </div>
@@ -287,9 +342,9 @@
             </div>
         </div>
     </footer>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-rating.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -299,6 +354,31 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
+
+
+    <script>
+        $('.group1').start(function(cur){
+            console.log(cur);
+            $('#info1').text(cur);
+        });
+        $('.group2').start(function(cur){
+            console.log(cur);
+            $('#info2').text(cur);
+        });
+
+        $('.group3').start(2,function(cur){
+            console.log(cur);
+            $('#info3').text(cur);
+        });
+        $('.group4').start(2,function(cur){
+            console.log(cur);
+            $('#info4').text(cur);
+        });
+
+        $("#see").on('click',function(){
+            alert($('.group1').getCurrentRating() + "--" + $('.group2').getCurrentRating());
+        });
+    </script>
 </body>
 
 </html>
