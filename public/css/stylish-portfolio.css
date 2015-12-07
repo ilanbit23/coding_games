@@ -37,7 +37,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7); }
 
 .btn-light {
-  border-radius: 0;
+  border-radius: 6px;
   color: #333;
   background-color: white; }
 
@@ -159,8 +159,9 @@ hr.small {
   -o-background-size: cover; }
 
 /* Portfolio */
-.portfolio {
-  padding: 50px 0; }
+.games {
+  padding: 50px 0;
+  text-align: center; }
 
 .portfolio-item {
   margin-bottom: 30px; }

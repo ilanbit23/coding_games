@@ -2,13 +2,15 @@
 .form-box{
   position:relative;
   margin: 20px auto;
-  width: 70%;
+  width: 55%;
   height: 600px;
   font-size: 1.5em;
   font-weight: bolder;
   background-color: #fff;
   padding: 10px;
   border-radius: 3px;
+  z-index: 1;
+
   //border: 2px solid black;
   //box-shadow: 0px 2px 3px 0px rgba(0,0,0,1);
 
@@ -45,7 +47,7 @@
         padding: 0 10px;
         border-radius: 2px;
         color: #333;
-        font-size:0.8rem;
+        font-size:0.8em;
         -webkit-transition:all 0.1s linear;
         -moz-transition:all 0.1s linear;
         transition:all 0.1s linear;

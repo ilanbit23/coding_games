@@ -1,13 +1,14 @@
 .form-box {
   position: relative;
   margin: 20px auto;
-  width: 70%;
+  width: 55%;
   height: 600px;
   font-size: 1.5em;
   font-weight: bolder;
   background-color: #fff;
   padding: 10px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  z-index: 1; }
   .form-box .formMailTo {
     position: relative;
     float: left;
@@ -35,7 +36,7 @@
         padding: 0 10px;
         border-radius: 2px;
         color: #333;
-        font-size: 0.8rem;
+        font-size: 0.8em;
         -webkit-transition: all 0.1s linear;
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear; }
@@ -103,7 +104,8 @@
   border-radius: 5px;
   border: none;
   margin-top: 5px;
-  background-color: #777; }
+  background-color: #777;
+  color: white; }
   .btnRate:hover {
     background-color: #5e5e5e; }
 
