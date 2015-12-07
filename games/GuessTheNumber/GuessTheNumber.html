@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="img/gtngIcon.ico">
+        <meta charset="UTF-8">
+        <title>Guess The Number</title>
+    </head>
+    <body>
+
+    <header>
+        <h1>Guess My Number</h1>
+    </header>
+        <!-- Guess My Number table content -->
+        <table border=0 cellpadding=0 cellspacing=10>
+            <tr valign=top>
+                <td><img src="img/gtngLogo.png"  border=0></td>
+
+                <td>
+                    <div class="game">
+                        <h2>I'm Thinking About A Number <span id="range"> 1 - <span id="max"></span></span></h2>
+                        <h3>Can you guess it?        You have <span id="try"></span> attempts.</h3>
+                        <img src="img/guessButton.png" onclick="userGuess()"
+                             onmouseover="this.src='img/guessButtonOn.png'"
+                             onmouseout="this.src='img/guessButton.png'"  />
+                    </div>
+
+                    <h3  class="roundScoreLine">Your Round Score: <span id="roundScore"></span></h3>
+                    <h2>Stage <span id="stage"></span></h2>
+                    <h1 class="totalScore"> Total Score: <span id="totalScore"></span></h1>
+                </td>
+            </tr>
+        </table>
+
+    <!-- Restart table content -->
+    <table class="restart" width="100%">
+        <h1 class="restart">To Restart The Game Click The Button Below </h1>
+        <tr valign="top">
+            <td align="center">
+                <img src="img/restartStageButton.png" onclick="initStage()"
+                     onmouseover="this.src='img/restartStageButtonOn.png'"
+                     onmouseout="this.src='img/restartStageButton.png'"  />
+            </td>
+            <td align="center">
+                <img src="img/restartGameButton.png" onclick="initGame()"
+                     onmouseover="this.src='img/restartGameButtonOn.png'"
+                     onmouseout="this.src='img/restartGameButton.png'"  />
+            </td>
+        </tr>
+    </table>
+    <script src="js/game.js"></script>
+    </body>
+</html>

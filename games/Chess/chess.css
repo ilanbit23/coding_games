@@ -1,0 +1,47 @@
+body {
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    user-select: none;
+    text-align: center;
+}
+
+h2 , h3{
+    font-size: 3em;
+    color: rgba(91, 124, 173, 1);
+    margin: 20px    ;
+
+
+}
+
+table {
+    /*width: 100%;*/
+    margin: auto;
+    table-layout: fixed;
+    border: 2px solid white;
+    user-select: none;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+}
+.cell:hover{
+    cursor: pointer;
+}
+
+.cell-black {
+    background-color: black;
+    color: white;
+}
+.cell-white {
+    background-color: white;
+    color: black;
+}
+.cell-target {
+    border-color: rgba(189, 10, 30, 0.8);
+
+}
+

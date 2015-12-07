@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/simon.css"/>
+    <title>Simon's Piano</title>
+</head>
+<body>
+<header>
+    <div class="followBar">
+        <div class="ofir-nadav">
+            <a href="https://www.facebook.com/ofir.nadav">Ofir Nadav</a>
+        </div>
+        <div class="coding-academy-logo">
+            <a  class="coding-academy-logo" href="http://coding-academy.org/">
+                <span class="symbol">&lt;/&gt;</span>
+                <span class="coding">coding</span>
+                <span class="academy">academy</span></a>
+        </div>
+    </div>
+    <h1>Simon's Piano</h1>
+</header>
+
+<nav>
+    <div class="msg">
+        <h1>Welcome</h1>
+        <button class="button" onclick="startGame(this)">Start!</button>
+        <div class="insertScores"></div>
+        <div class="newUser">
+            <label for="playerName">Name:</label><br />
+            <input id="playerName" type="text" autofocus><br />
+            <input class="submit" type="submit" value="Send" onclick="newUser()">
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="board">
+        <div class="note note-1" id="a" onclick="noteClicked(this)"></div>
+        <div class="note note-2" id="b" onclick="noteClicked(this)"></div>
+        <div class="note note-3" id="c" onclick="noteClicked(this)"></div>
+        <div class="note note-4" id="d" onclick="noteClicked(this)"></div>
+        <div class="note note-5" id="e" onclick="noteClicked(this)"></div>
+    </div>
+</main>
+
+<footer class="userInfo">
+    <div class="score">Score: <span class="scoreNum">0</span></div>
+    <div class="turnInfo"></div>
+    <div class="bestScore">Best Score: <span class="bestScoreNum">0</span> </div>
+</footer>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/simon.js"></script>
+
+</body>
+</html>

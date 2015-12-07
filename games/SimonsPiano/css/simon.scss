@@ -1,0 +1,271 @@
+@import "normalize";
+@import "variables";
+
+/* Mobile First: size < 768px */
+html {
+  background-color: $bg-color;
+  text-align: center;
+  color: $font-color;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $a-color;
+  &:hover {
+    color: $hover-a-color;
+  }
+}
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  background: $bg-color;
+  overflow:hidden;
+  color: $font-color;
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-size: 400%;
+  font-weight: bold;
+  line-height: 1em;
+  margin-bottom: .2em;
+  margin-top: .5em;
+}
+
+.followBar {
+  font-size: 1.7em;
+  position: relative;
+  width: 100%;
+  background: $bg-followBar;
+  padding: 10px;
+  box-shadow: inset 0px -1px 4px $shadow-color;
+  display: flex;
+
+  justify-content: space-between;
+  a {
+    padding: 10px;
+    position: relative;
+    top: -1px;
+    margin-right: 20px;
+  }
+}
+
+
+main .board{
+  width: 70%;
+  height: 550px;
+  outline: 1px solid grey;
+  margin: auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+
+  .note{
+    flex-basis: 18%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    order: 0;
+    align-self: stretch;
+    outline: 1px solid white;
+  }
+
+  .note-1 {
+    background: darken($note1-color, 30%);
+  }
+  .note-1.active {
+    background: $note1-color;
+    box-shadow: 0 0 10px $note1-color;;
+  }
+
+  .note-2 {
+    background: darken($note2-color, 30%);
+  }
+  .note-2.active {
+    background: $note2-color;
+    box-shadow: 0 0 10px $note2-color;
+  }
+
+  .note-3 {
+    background: darken($note3-color, 30%);
+  }
+  .note-3.active {
+    background: $note3-color;
+    box-shadow: 0 0 10px $note3-color;
+  }
+
+  .note-4 {
+    background: darken($note4-color, 30%);
+  }
+  .note-4.active {
+    background: $note4-color;
+    box-shadow: 0 0 10px $note4-color;
+  }
+
+  .note-5 {
+    background: darken($note5-color, 30%);
+  }
+  .note-5.active {
+    background: $note5-color;
+    box-shadow: 0 0 10px $note5-color;
+  }
+}
+
+footer.userInfo {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: none;
+
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  .score, .bestScore{
+    font-size: 2em;
+    padding: 10px 10px;
+
+  }
+  .turnInfo{
+    font-size: 3em;
+    font-family: "Helvetica Neue";
+    color: $font-color;
+  }
+
+}
+
+nav .msg {
+  font-size: 1.3em;
+  background: rgba(181, 181, 181, 0.5);
+  width: 100%;
+  height: 70%;
+  text-align:center;
+  z-index: 500;
+  display: flex;
+  margin: auto;
+  position: fixed;
+
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .button {
+    font-size: 1.5em;
+    font-weight:bold;
+    background: $bg-btn;
+    border: 5px solid $btn-border-color;
+    display: block;
+    width: 50%;
+    padding: 1em 0;
+    line-height:0;
+    color: $font-color;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px $shadow-color;
+    text-shadow: -1px -1px 0 rgba(0,0,0,.5);
+    &:HOVER {
+      background: $bg-btn-hover;
+      border-color: $btn-hover-border ;
+      box-shadow: 0 0 10px $shadow-color;
+      text-shadow: 0 0 3px $shadow-color;
+    }
+  }
+
+  .insertScores{
+    @extend .score;
+    margin: 30px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .newUser{
+    font-size: 1.5em;
+    font-weight: bold;
+    display: none;
+
+    #playerName{
+      border-radius: 10px;
+
+    }
+    input, input:focus{
+      color: $bg-color;
+      outline: 0;
+      text-align: center;
+    }
+    .submit{
+      @extend .button;
+      padding: 5%;
+      font-weight: normal;
+      font-size: larger;
+    }
+  }
+}
+
+
+/* Tablet: 768px <= size   */
+@media (min-width: 768px) {
+
+}
+
+
+/* Tablet: 768px <= size < 992px  */
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/* Desktop: size >= 992px  */// TODO: adjust to mobile
+@media (min-width: 992px) {
+  h1 {
+    font-size: 400%;
+  }
+  .followBar {
+    font-size: 1.7em;
+  }
+  main .board {
+    width: 70%;
+    height: 550px;
+  }
+  footer.userInfo {
+    width: 70%;
+
+    .score, .bestScore{
+      font-size: 2em;
+      padding: 10px 10px;
+
+    }
+    .turnInfo {
+      font-size: 3em;
+    }
+  }
+
+  nav .msg {
+    font-size: 1.3em;
+
+    .button {
+      font-size: 1.5em;
+    }
+
+    .insertScores {
+      margin: 30px;
+      font-size: 2em;
+    }
+
+    .newUser {
+      font-size: 1.5em;
+    }
+    .submit{
+      font-size: larger;
+    }
+
+  }
+
+}

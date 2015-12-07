@@ -1,0 +1,97 @@
+html {
+    align-content: center;
+    background-color: #A8A8A8;
+
+}
+
+body {
+    width: 60%;
+    height: 600px;
+    margin: auto;
+    align-content: center;
+    background: #CCCCCC;
+    color: white;
+    box-shadow:2px 2px 10px 10px #5C5C5C;
+}
+
+header h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+/* resize images game*/
+.resize img {
+    width: 100%;
+    height: auto;
+
+}
+
+h1 {
+    padding-left: 1%;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: x-large;
+    color: #9E009E;
+    margin-bottom: 0px;
+}
+h3 {
+    color: #FF2626;
+    margin: 5px;
+    display: inline-block;
+}
+
+table{
+    color: #0096AD;
+    width: 100%;
+}
+
+div img{
+    width: 50%;
+    height: auto;
+}
+.row:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+.col{
+    color: black;
+    margin: 2%;
+    float: left;
+    width: 26%;
+    padding: 0.5%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    
+
+ }
+
+
+
+div#memory_board{
+    background:#CCC;
+    border:#999 1px solid;
+    width:90%;
+    height:auto;
+    margin: 0 auto;
+    overflow: auto;
+}
+div#memory_board > div {
+    background-image: url("../img/cards/back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: #000 1px solid;
+    width: 53px;
+    height: 71px;
+    float: left;
+    margin: 15px;
+    padding: 20px;
+    font-size: 64px;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="mineSweeper.css"/>
+</head>
+<body>
+    <h1>Mine Sweeper</h1>
+    <div id="game" class="minesweeper">
+        <span>Level:</span>
+        <select class="level">
+            <option value="easy">Easy</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+        <p class="gameInfo">
+            <span>Flags:</span><span class="flagsNum"></span>
+            <span class="timer">Time:
+            <label id="minutes">00</label>:<label id="seconds">00</label></span>
+        </p>
+        <p>
+            <span class="win">Winner. Your Time: <span class="corrTime"></span></span>
+            <span class="lose">Play once again. Your Time: <span class="corrTime"></span></span>
+        </p>
+        <p>
+            <button class="btn" type="button" onclick="newGame()">New game</button>
+        </p>
+           <div class="disableUserSelect">
+            <table class="board"></table>
+        </div>
+
+    </div>
+<footer>
+    <H4>Copyright © 2015, by
+        <A HREF="https://www.facebook.com/ofir.nadav">Ofir Nadav</A>
+    </H4>
+</footer>
+    <script src="utilsFunc.js"></script>
+    <script src="mineSweeper.js"></script>
+</body>
+</html>
