@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+    background: white;
+    background: radial-gradient(circle, #fff 20%, #ccc);
+    background-size: cover;
+    text-align: center;
+}
+
+body {
+    font-size: 3em;
+}
+
+.win {
+    background: green;
+    width: 800px;
+    height: 55px;
+    color: white;
+    border-radius: 10px;
+    display: none;
+    margin: auto;
+}
+
+.lose {
+    background: red;
+    width: 800px;
+    height: 55px;
+    color: black;
+    border-radius: 10px;
+    display: none;
+    margin: auto;
+}
+
+h1{
+    font-size: 2em;
+}
+
+.timer{
+    visibility: hidden;
+    padding-left: 40px;
+}
+
+.mine {
+    background: url("img/mine.png");
+}
+
+.flag{
+    background: url("img/flag.png");
+    z-index: 1;
+}
+
+.board {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+    text-align:center;
+    margin: auto;
+    user-select: none;
+    border: solid 3px black;
+}
+
+.board td {
+    width: 32px;
+    height: 32px;
+    border: solid 1px #808080;
+}
+
+.red{
+    background-color: red;
+}
+
+/* Hide this class for code review */
+.hiddenCell {
+    background: url("img/blank.png");
+    z-index: -1;
+}
+
+.hiddenCell:hover {
+    cursor: default;
+}
+
+.btn {
+    background: #b5b5b5;
+    background-image: linear-gradient(to bottom, #b5b5b5, #515252);
+    border-radius: 9px;
+    box-shadow: 1px 5px 3px #666666;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #333333;
+    background-image: linear-gradient(to bottom, #333333, #b3b3b3);
+    text-decoration: none;
+}
+
+.disableUserSelect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.level {
+    font-size: x-large;
+    font-family: 'Russo One', sans-serif;
+}

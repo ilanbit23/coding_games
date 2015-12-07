@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Touch the Nums</title>
+    <link rel="stylesheet" href="game.css"/>
+</head>
+<body>
+    <header>
+        <h1>Touch the Nums</h1>
+    </header>
+
+    <button class="btnStart" onclick="countDown();">Start New Game</button>
+
+    <div class="gameInfo">
+        Next num: <span id="nextNum">1</span>
+        <br>
+        Your time: <label id="seconds">00</label>:<label id="miliSeconds">00</label>
+    </div>
+
+    <span class="countDown"></span>
+    <table class="board" border="1">
+
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="utilsFunc.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
