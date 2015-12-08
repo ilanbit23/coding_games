@@ -61,11 +61,6 @@
       .form-box .formMailTo .textarea .required {
         color: red; }
 
-/*.img-portfolio {*/
-/*height: 240px;*/
-/*width: 360px;*/
-/*border-radius: 10px;*/
-/*}*/
 .header-h1 {
   color: #1b6d85; }
 
@@ -108,5 +103,11 @@
   color: white; }
   .btnRate:hover {
     background-color: #5e5e5e; }
+
+.icon {
+  font-size: 0.7em !important;
+  transition: font-size 300ms; }
+  .icon:hover {
+    font-size: 1em !important; }
 
 /*# sourceMappingURL=main.css.map */

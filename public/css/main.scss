@@ -1,10 +1,5 @@
 @import "_contact.scss";
 
-/*.img-portfolio {*/
-    /*height: 240px;*/
-    /*width: 360px;*/
-    /*border-radius: 10px;*/
-/*}*/
 .header-h1 {
     color: #1b6d85;
 }
@@ -52,5 +47,13 @@
 
     &:hover {
         background-color: #5e5e5e;
+    }
+}
+
+.icon {
+    font-size: 0.7em !important;
+    transition: font-size 300ms;
+    &:hover {
+        font-size: 1em !important;
     }
 }
